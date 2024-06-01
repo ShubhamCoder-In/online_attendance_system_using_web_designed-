@@ -1,0 +1,36 @@
+.section4 {
+    padding: 3rem 0px;
+    background: url("../image/sidebar_img.jpg") no-repeat;
+    background-size:  350px 80%;
+    background-position: 80% 60%; 
+    max-height: auto;
+    display:flex;
+    padding: 2rem 10%;
+    flex-direction: column;
+    align-items: left;
+    background-color: #f1f1ff;
+  }
+  .section4 .container_sect4{
+    width:60%;
+    background: #ffffff;  
+  }
+  .section4_heading {
+    font-size: 1.3rem;
+    color: white;
+    background-color: #86bb0999;
+    padding: 5px 10px;
+    font-weight: 700;
+    transform: skew(5deg);
+    font-family: 'Oswald', sans-serif;
+    text-transform: capitalize;
+  }
+  
+  .section4 li {
+    padding: 20px;
+    font-size: .9rem;
+    color: #2c1f1fd1;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+  }
+  
+  

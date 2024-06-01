@@ -1,0 +1,63 @@
+/*about.html file css*/
+.about_html_section1{
+  width: 80%;
+  margin:2rem 10%;
+  font-size: 18px; 
+ padding : 3rem 1rem;
+}
+.about_html_section1 h1{
+  text-align: center; 
+  padding: 2rem; 
+  font-size: 36px; 
+  text-transform: capitalize;
+}
+.about_html_section1 h3{
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.about_html_section1 p{
+  padding-top: 1.5rem; 
+}
+.about_html_section1 li{
+  line-height: 2.5;
+}
+.about_html_section1  h4 {
+  font-size: 24px; 
+  padding: 1rem 0px; 
+  font-weight: 900;
+  text-transform: capitalize;
+}
+.about_html_section1 li b{
+  font-weight: 900;
+  text-transform: capitalize;
+}
+/* college_list.html */
+.college_list_section1{
+  padding : 3rem 2rem;
+}
+.college_list_section1 h1{
+  padding: 1rem; 
+  font-size: 34px;
+  text-transform: capitalize;
+}
+.college_list_section1 p{
+  font-size: 20px; 
+  font-weight: 600;
+  padding: 1rem; 
+}
+
+/* teacher_panel.html Css file*/
+.teacher_panel_section1{
+  padding: 2rem 3rem; 
+}
+.teacher_panel_section1 h1{
+  padding: 1rem;
+  font-size: 34px;
+  text-transform: capitalize;
+}
+.teacher_panel_section1 p{
+  font-size: 20px;
+  font-weight: 600;
+  padding: 1rem;
+}

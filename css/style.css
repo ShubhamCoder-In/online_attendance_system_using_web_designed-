@@ -1,0 +1,431 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100vw;
+  background: #ffffff;
+  font-family: sans-serif;
+}
+
+@media (max-width: 800px) {
+  .header {
+    padding: 0px;
+    height: 80px;
+    width: 100%;
+    padding: 5px;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+  }
+
+  .top-menu {
+    width: 80%;
+    align-items: center;
+    padding: 0px 10px;
+  }
+
+  .site-name {
+    font-size: 2em;
+    color: #000a;
+  }
+
+  .main-header {
+    width: 80px;
+    height: 80px;
+  }
+
+  .menubar {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 500;
+    border-radius: 3px;
+    border: 4px solid #383838;
+  }
+
+  .main-menu {
+    display: none;
+    background: #ff0000;
+    width: 70%;
+    height: 100%;
+    position: fixed;
+    transition: 600ms;
+    flex-direction: column;
+    justify-content: left;
+    top: 0px;
+    left: 0px;
+    padding: 20px 10px;
+    z-index: 3;
+  }
+  .main-menu .close-menu {
+    display: block;
+    text-align: right;
+    padding: 5px 20px;
+    color: white;
+    font-weight: 500;
+    font-size: 2em;
+  }
+  .main-menu li {
+    width: calc(100% - 60px);
+    height: auto;
+    text-transform: capitalize;
+    line-height: 2.5;
+    border-bottom: 3px solid #ffffff;
+  }
+
+  .main-menu a {
+    display: block;
+    width: 100%;
+    height: auto;
+    width: 100%;
+    height: auto;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 1.2em;
+  }
+
+  .register-panel {
+    width: calc(100% - 60px);
+    padding-left: 0px;
+    margin: 20px 0px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: cyan;
+    gap: 20px;
+  }
+
+  .register-panel li {
+    display: inline-block;
+    width: 100%;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    height: fit-content;
+    padding: 5px 10px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 1.3em;
+  }
+
+  .login-btr {
+    color: #ffffff;
+    background: red;
+    outline: 2px solid white;
+    transition: all 0.3s ease;
+  }
+
+  .signup-btr {
+    color: red;
+    background: white;
+    transition: all 300ms ease;
+  }
+
+  .login-btr:hover {
+    color: red;
+    background: white;
+    outline: none;
+  }
+
+  .signup-btr:hover {
+    color: #ffffff;
+    background: #fff0;
+    box-shadow: -2px 2px 5px #fff;
+  }
+
+  .login-panel,
+  .signup-panel {
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    border: none;
+    overflow: scroll;
+    animation-name: dropdown;
+    animation-duration: 300ms;
+    animation-fill-mode: ease-in-out;
+  }
+  @keyframes dropdown {
+    0% {
+      left: 50%;
+      top: 50%;
+      width: 0%;
+      height: 0%;
+    }
+    100% {
+      left: 0%;
+      top: 0%;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .heading-form h1 {
+    font-size: 1.7em;
+    padding: 15px;
+    letter-spacing: 2px;
+    color: #f6f0f0;
+    background: rgb(64, 59, 59);
+  }
+  .contain-form p {
+    font-size: 1.4em;
+    color: #737373;
+    font-weight: 400;
+  }
+  .contain-form .close-bar {
+    padding: 5px 30px;
+    line-height: 50px;
+    font-size: 50px;
+    background: #387cd5;
+    color: #e7e6e6;
+  }
+
+  .contain-form form {
+    padding: 25px;
+    margin: 0px;
+    height: 80vh;
+    background-color: #fcfcfc;
+  }
+
+  .contain-form label {
+    font-size: 1.6em;
+    padding: 5px 0px;
+    font-weight: 700;
+    margin: 10px;
+    color: #212121;
+  }
+
+  .contain-form input[type="email"],
+  .contain-form input[type="name"],
+  .contain-form input[type="password"],
+  .contain-form textarea,
+  .contain-form input[type="checkbox"]
+  {
+    margin: 0px;
+    font-size: 1.3em;
+    padding: 10px 10px;
+    border: 2px solid #2c2b30;
+    background: #f4f2f2;
+    border-radius: 5px;
+    color: #595959;
+  }
+  .contain-form .alert p{
+    font-size:  1.4em;
+    line-height: 1.5;
+    padding: 10px 5px;
+    color: #803409;
+  }
+
+  .group-btn {
+    padding: 10px 0px;
+    margin: 20px 0px;
+  }
+
+  .group-btn button {
+    border-radius: 5px;
+    font-weight: 700;
+  }
+  .group-btn input {
+    width: 100%;
+    color: white;
+    padding: 10px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+  }
+  .contain-form .captain-form span {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #383838;
+  }
+  .contain-form .captain-form span a {
+    font-size: 1.1em;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  .cover_image {
+    background-color: #f5f5f5;
+    background-size: 100% 30vh;
+    background-position-y: 0%;
+    width: 100%;
+    display: flex;
+    box-shadow: 0px 0px 20px #00000045;
+    flex-direction: column-reverse;
+    height: fit-content;
+    position: relative;
+  }
+  .cover_heading {
+    position: static;
+    width: 100%;
+    padding: 20px;
+    bottom: 1%;
+    left: 0px;
+    display: block;
+    background-color: transparent;
+    color: #2a2725;
+  }
+  .cover_heading .cover-btn {
+    display: block;
+    background-color: transparent;
+    text-align: left;
+    padding: 20px 10px;
+  }
+  .cover_heading button {
+    margin-left: 0px;
+  }
+  .cover_image h4 {
+    text-shadow: none;
+    text-transform: capitalize;
+    color: #383838;
+  }
+  .cover_image h4 span {
+    font-size: 0.8em;
+    color: #383838;
+  }
+  .cover_heading p {
+    font-size: medium;
+  }
+  .cover_image h3 {
+    margin-top: 30vh;
+    font-size: 0.85em;
+    background: #387cd5;
+    color: #eae8e8;
+    font-weight: 900;
+    position: static;
+    letter-spacing: 2px;
+    text-align: left;
+    width: 100%;
+    font-family: sans-serif;
+    font-weight: 700;
+  }
+
+  .top_section .container {
+    width: 90%;
+  }
+  .group_list {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .group_list .column_group {
+    width: 100%;
+    padding-top: 10px;
+  }
+  .group_list h3 {
+    margin-top: 10px;
+    padding: 20px 10px;
+    font-size: 1.5em;
+    text-align: left;
+    font-weight: 700;
+  }
+  .group_list p {
+    padding: 5px 15px;
+    font-size: 1.2rem;
+    text-align: left;
+  }
+  .group_list img {
+    width: 60%;
+    height: 300px;
+    margin: 10px 5%;
+  }
+  .grid_list {
+    grid-template-columns: repeat(1, 1fr);
+    overflow: scroll;
+    grid-template-rows: repeat(6, auto);
+    grid-gap: 25px;
+    padding: 30px 15px;
+    width: 100%;
+  }
+  .grid_group {
+    width: 80%;
+    margin: 0px auto;
+    border-radius: 5px;
+    min-height: 200px;
+  }
+  .grid_group h3 {
+    font-size: 18px;
+    padding: 20px;
+    letter-spacing: 1.2px;
+    font-weight: 900;
+  }
+  .grid_group p {
+    padding: 20px;
+    font-size: 1.3em;
+    font-weight: 700;
+  }
+  .advertiser_panel .container_ads {
+    width: 90%;
+    padding: 2rem 0px;
+  }
+
+  .advertiser_panel .cart_list {
+    grid-template-rows: repeat(3, 300px);
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    grid-gap: 1.5rem;
+    position: relative;
+  }
+  .cart_list img {
+    background: #387cd5;
+    position: relative;
+  }
+
+  .advertiser_panel h3 {
+    margin-top: 30px;
+    padding: 20px;
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+  .advertiser_panel p {
+    font-size: 1.2em;
+    transform: rotate(0deg);
+    font-weight: 500px;
+    padding: 20px 10px;
+  }
+  .section4_heading {
+    text-align: left;
+    background: #383838;
+    font-size: 1.5em;
+    padding: 10px;
+    font-weight: 700;
+  }
+  .section4 .container_sect4 {
+    width: 97%;
+    padding: 10px 20px;
+  }
+  .section4 li {
+    padding: 30px 10px;
+    font-size: 1.2em;
+  }
+  .section5 {
+    background-size: 100% 20vh;
+    background-position-y: 0%;
+    width: 100%;
+    padding: 0px;
+    height: fit-content;
+  }
+  .section5 .contain-form {
+    margin-top: 20vh;
+    width: 100%;
+    position: static;
+    background-color: white;
+  }
+  .section5 .group-btn .btn{
+    padding: 12px 20px;
+    font-size: 1.3em;
+  }
+  footer {
+    font-size: 14px;
+    padding: 15px;
+    font-weight: 400;
+  }
+}

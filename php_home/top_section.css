@@ -1,0 +1,62 @@
+/*  */
+.top_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top_section .container {
+  width: 80%;
+}
+.group_list {
+  margin: 1rem 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.group_list .column_group {
+  width: 50%;
+  height: fit-content;
+  margin: 5px;
+}
+.group_list .column_group:nth-child(1) {
+  text-align: end;
+}
+.group_list .column_group:nth-child(2) {
+  text-align: left;
+  /* background: rgba(130, 130, 175, 0.833); */
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.group_list h3 {
+  transform: skewX(2deg);
+  font-size: 1.4rem;
+  color: #636363;
+  border-bottom: 1px solid  #636363;
+  /* background-color: red; */
+  font-family: "Nunito Sans", sans-serif;
+  text-transform: capitalize;
+  padding: 5px 15px;
+  text-align: left;
+  /* box-shadow: 5px 5px #3f3fff; */
+  font-weight: 700;
+}
+.group_list p {
+  padding: 30px 20px;
+  /* font-size: 1rem; */
+  line-height: 1.7;
+  color: #392f2fd7;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 500;
+}
+.group_list a {
+  font-size: 14px;
+}
+.group_list img {
+  width: 300px;
+  height: 250px;
+  margin: 5% 5%;
+  border-radius: 50%;
+  border: 15px solid #87f00fd7;
+}

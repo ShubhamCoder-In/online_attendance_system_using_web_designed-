@@ -1,0 +1,323 @@
+.alert_box {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .php_alert {
+    position: fixed;
+    top: 100px;
+    background-color: #fff;
+    width: 450px;
+    padding: 1rem 1.5rem;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 2p 2px 30px -5px rgb(191, 188, 196);
+    z-index: 3;
+  }
+  
+  .php_alert p {
+    font-size: 16px;
+    text-transform: capitalize;
+    line-height: 1.5;
+    color: #191919;
+    padding-bottom: 1.5rem;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+  }
+  
+  .alert_btn 
+  {
+    padding: 0px 25px;
+    float: right;
+    box-shadow: 2px 2px 5px rgb(29, 28, 28);
+    line-height: 1.5;
+    border-radius: 5px;
+    background-color: blue;
+    border: none;
+    text-transform: lowercase;
+    font-family: sans-serif;
+    color: white;
+    font-size: 18px;
+    transition: all 300ms ease-in-out;
+  }
+  .alert_btn:hover{
+    border: none;
+    opacity: .85;
+    background: red;
+    cursor: pointer;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: small;
+    color: rgba(183, 62, 29, 0.918);
+  }
+  
+  a {
+    font-weight: 600;
+    font-size: small;
+font-family: 'Nunito Sans', sans-serif;
+    color: rgb(90, 13, 197);
+  
+  }
+  
+  .header {
+    height: 60px;
+    padding: 0px 1.5rem;
+    background: rgb(200, 177, 2);
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    box-shadow: 2px 2px 15px -3px grey;
+    display: flex;
+    font-weight: 500;
+    justify-content: space-around;
+  }
+  
+  .top-menu {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  
+  .site-name {
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: rgb(33, 29, 29);
+    line-height: 60px;
+    font-weight: 900;
+  }
+  
+  .site-name:hover {
+    opacity: 0.7;
+    color: #110f0fef;
+    cursor: pointer;
+  }
+  
+  .main-header {
+    display: flex;
+    justify-content: right;
+    height: 60px;
+  }
+  
+  .menubar {
+    display: none;
+  }
+  
+  .main-menu {
+    justify-content: right;
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+  }
+  .main-menu .close-menu{
+    display: none;
+  }
+  .main-menu li {
+    list-style: none;
+    font-family: 'Nunito Sans', sans-serif;
+    text-transform: capitalize;
+  }
+  
+  .main-menu a {
+    padding: 7px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: rgb(32, 28, 28);
+    transition: all 300ms ease-in-out;
+  }
+  
+  .main-menu a:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  
+  .register-panel {
+    display: flex;
+    padding-left: 50px;
+    align-items: center;
+    justify-content: right;
+  }
+  
+  .register-panel li {
+    list-style: none;
+    font-size: 18px;
+    padding: 0px 10px;
+    font-weight: 600;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  
+  .login-btr,
+  .logout-btr {
+    background: rgba(39, 38, 38, 0.086);
+    color: #fefefeaa;
+    line-height: 40px;
+    transition: color 300ms ease-in-out;
+  }
+  
+  .logout-btr a {
+    font-weight: 700;
+    padding: 8px 15px;
+    font-family: 'Lato', sans-serif;
+    transition: all 300ms ease-in-out;
+  }
+  
+  .logout-btr:hover {
+    color: #4226b3a1;
+    background-color: rgba(236, 242, 221, 0.257);
+  }
+  
+  .login-btr:hover {
+    color: #535557bb;
+    background-color: rgba(34, 140, 22, 0.412);
+  }
+  
+  .signup-btr {
+    font-weight: 700;
+    color: #111a;
+    transition: color 300ms ease-in-out;
+  }
+  
+  .signup-btr:hover {
+    color: #4227ba95;
+  
+  }
+  
+  .login-panel,
+  .signup-panel {
+    display: none;
+    position: fixed;
+    width: 60vw;
+    top: 100px;
+    left: 20vw;
+    z-index: 3;
+    box-shadow: 2px 2px 15px -3px grey;
+    background: #fff;
+    border-radius: 5px;
+  }
+  
+  .heading-form {
+    text-transform: capitalize;
+    font-weight: 900;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+  }
+  
+  .heading-form h1 {
+    font-size: 20px;
+padding-top: 20px; 
+    font-family: 'Lato', sans-serif;
+    line-height: 35px;
+    color: #0d0d0d;
+  }
+  
+  .contain-form p {
+    padding: 10px 0px;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  
+  .contain-form .close-bar {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 26px;
+    border-radius: 0px 5px 0px 0px;
+    font-weight: 500;
+    color: #636363;
+    line-height: 30px;
+    padding: 2px 15px;
+  }
+  
+  .contain-form .close-bar:hover {
+    background-color: darkred;
+  }
+  
+  .contain-form form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+  }
+  
+  .contain-form label {
+    padding: 10px 0px 5px 0px;
+    font-family: 'Lato', sans-serif;
+    text-transform: capitalize;
+    font-size: 14px;
+    color: #1c1c1c;
+  }
+  
+  .contain-form label b {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 0px 10px;
+    color: #ff4747;
+  }
+  
+  .contain-form input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    margin: 0px 5px;
+    font-size: 13px;
+font-family: 'Nunito Sans', sans-serif;
+    background: transparent;
+    border-bottom: .5px solid #a8a8a8;
+  }
+  
+  .contain-form .bot-section {
+    padding-top: 15px;
+  }
+  
+  .contain-form .alert p {
+    padding: 10px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #a80c0c;
+    font-size: 13px;
+    font-weight: 600; 
+  }
+  
+  .group-btn {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .group-btn input {
+    background: #d40000;
+    font-size: 18px;
+    color: white;
+    border: none;
+    font-weight: 600;
+    border-radius: 5px;
+    text-transform:  capitalize;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  form .captain-form {
+    justify-content: left;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 1.5;
+    padding: 0px 10px;
+  }
+  
+  form span {
+    padding-right: 10px;
+  }
+  
+  .contain {
+    display: none;
+    width: 100%;
+    height: 95vh;
+  }
+  

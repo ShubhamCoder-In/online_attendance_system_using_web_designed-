@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+.container_teacher_profile {
+    max-width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    overflow: hidden;
+    padding: 20px;
+}
+.container_teacher_profile .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.container_teacher_profile .grid-item {
+    flex: 1 1 calc(50% - 20px);
+    margin: 10px;
+    background-color: #e6f3f9;
+    padding: 20px;
+    border-radius: 10px;  
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.177);
+    position: relative;
+}
+.container_teacher_profile .grid-item img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    flex: 0 0 auto;
+}
+.details {
+    flex: 1 1 auto;
+}
+.container_teacher_profile .field-name {
+    font-weight: bold;
+    color: #666;
+}
+.container_teacher_profile  h2 {
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+.container_teacher_profile .edit-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 8px 20px;
+    cursor: pointer;
+}
